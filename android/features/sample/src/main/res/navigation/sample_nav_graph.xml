@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sample_nav_graph"
+    app:startDestination="@id/sample"
+    >
+
+
+    <fragment
+        android:id="@+id/sample"
+        android:name="jp.co.yumemi.features.sample.SampleFragment"
+        android:label="Sample" >
+        <action
+            android:id="@+id/action_sample_to_sample_next"
+            app:destination="@id/sample_next" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sample_next"
+        android:name="jp.co.yumemi.features.sampleNext.SampleNextFragment"
+        android:label="SampleNext" />
+</navigation>

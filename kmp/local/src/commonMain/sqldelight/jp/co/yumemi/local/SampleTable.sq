@@ -1,0 +1,13 @@
+CREATE TABLE SampleTable (
+    id TEXT PRIMARY KEY NOT NULL,
+    value TEXT NOT NULL
+);
+
+get:
+SELECT * FROM SampleTable WHERE id = ?;
+
+insert:
+INSERT OR REPLACE INTO SampleTable VALUES ?;
+
+deleteAll:
+DELETE FROM SampleTable;

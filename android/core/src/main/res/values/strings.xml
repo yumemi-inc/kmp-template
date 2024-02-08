@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sample_title">Sample</string>
+    <string name="sample_next">Next</string>
+    <string name="sample_next_screen">Next screen</string>
+    <string name="sample_error_title">エラー</string>
+    <string name="sample_error_network_description">通信ができませんでした。通信環境の良い所で、再度お試しください。</string>
+    <string name="sample_error_authentication_description">通信中に問題が発生いたしました。お手数ですが、もう一度お試しください。</string>
+    <string name="sample_error_login_description">ログインできませんでした。アプリを再起動して再度ログインをお試しください。</string>
+    <string name="sample_error_maintenance_description">サーバーメンテナンス作業に伴い、現在サービスを一時停止させていただいております。</string>
+</resources>
