@@ -24,7 +24,7 @@ open class DefaultHttpClient(
 ) : ApiClient {
     private val authentications: kotlin.collections.Map<String, jp.co.yumemi.remote.core.auth.Authentication> by lazy {
         mapOf(
-            "basicAuth" to jp.co.yumemi.remote.core.auth.HttpBasicAuth()
+            "access_token" to jp.co.yumemi.remote.core.auth.ApiKeyAuth(location = "query", paramName = "access_token")
         )
     }
 
@@ -134,7 +134,7 @@ open class DefaultHttpClient(
 
         return client.request {
             this.url {
-                appendPath(listOf("api") + requestConfig.path.trimStart('/').split('/'))
+                appendPath(requestConfig.path.trimStart('/').split('/'))
                 requestConfig.query.forEach { query ->
                     query.value.forEach { value ->
                         parameter(query.key, value)
