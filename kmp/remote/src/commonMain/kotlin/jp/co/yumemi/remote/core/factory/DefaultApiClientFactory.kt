@@ -32,5 +32,7 @@ class DefaultApiClientFactory(
                 installLogging()
             }
         },
-    )
+    ).apply {
+        setApiKey(TODO("Add Api Key"), "access_token")
+    }
 }
